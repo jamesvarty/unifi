@@ -24,7 +24,6 @@ WORKDIR /usr/lib/unifi
 COPY root /
 
 RUN set -x \
-
     && groupadd -r unifi -g $PGID \
     && useradd --no-log-init -r -u $PUID -g $PGID unifi \
     && mkdir -p /usr/share/man/man1 \
